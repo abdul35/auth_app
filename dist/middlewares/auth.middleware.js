@@ -12,25 +12,21 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const dotenv_1 = __importDefault(require("dotenv"));
-const express_1 = __importDefault(require("express"));
-require("module-alias/register");
-const cors_1 = __importDefault(require("cors"));
-const index_1 = __importDefault(require("./router/index"));
-dotenv_1.default.config();
-const app = (0, express_1.default)();
-const PORT = process.env.PORT;
-app.use((0, cors_1.default)());
-app.use(express_1.default.json());
-app.use('/api', index_1.default);
-(() => __awaiter(void 0, void 0, void 0, function* () {
-    try {
-        app.listen(PORT, () => {
-            console.log(`Server has been started on http://localhost:${PORT}!`);
+exports.authMiddleware = void 0;
+const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
+const authMiddleware = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
+    const token = req.headers.authorization;
+    if (token) {
+        jsonwebtoken_1.default.verify(token, process.env.ACCESS_TOKEN_KEY, (err, details) => {
+            if (err) {
+                res.sendStatus(401).send('Invalid tokek');
+                return next(err);
+            }
+            const { userId } = details;
+            res.locals.userId = userId;
         });
+        next();
     }
-    catch (error) {
-        throw Error('Server is not started:( - \n' + error);
-    }
-}))();
-//# sourceMappingURL=main.js.map
+});
+exports.authMiddleware = authMiddleware;
+//# sourceMappingURL=auth.middleware.js.map

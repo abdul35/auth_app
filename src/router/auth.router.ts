@@ -1,5 +1,5 @@
 import express, { Request, Response } from "express";
-import { AuthController } from '../controllers/auth/auth.controller';
+import { AuthController } from '@controllers/auth/auth.controller';
 const router = express.Router();
 const authController = new AuthController();
 
@@ -11,6 +11,6 @@ router.get('/logout', authController.logout);
 
 router.get('/info', authController.info);
 
-router.get('/signin/new_token', authController.refresh);
+router.post('/signin/new_token', authController.refresh);
 
 export default router;

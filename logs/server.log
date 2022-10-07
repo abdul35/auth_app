@@ -1,0 +1,88 @@
+info: Oct-03-2022 21:56:17: 	GG WP
+info: Oct-03-2022 21:56:41: 	GG WP
+info: Oct-03-2022 21:56:59: 	GG WP
+info: Oct-03-2022 21:57:47: 	GG WP
+info: Oct-03-2022 21:59:20: 	GG WP
+info: Oct-03-2022 22:01:55: 	GG WP
+info: Oct-03-2022 22:03:07: 	User created successfully
+info: Oct-03-2022 22:04:30: 	User created successfully
+[32minfo[39m: Oct-03-2022 22:06:37: 	[32mUser created successfully[39m
+[32minfo[39m: Oct-03-2022 22:07:22: 	[32mUser created successfully[39m
+[32minfo[39m: Oct-03-2022 22:08:53: 	[32mUser created successfully[39m
+info: Oct-03-2022 22:09:38: 	User created successfully
+[32minfo[39m: Oct-03-2022 22:09:53: 	[32mUser created successfully[39m
+[32minfo[39m: Oct-03-2022 22:11:40: 	User created successfully
+info: Oct-05-2022 01:37:41: 	User created successfully
+info: Oct-05-2022 01:58:54: 	User created successfully
+info: Oct-05-2022 01:59:50: 	User created successfully
+info: Oct-05-2022 02:00:47: 	User created successfully
+info: Oct-05-2022 02:02:32: 	User created successfully
+info: Oct-05-2022 12:43:01: 	User created successfully
+error: Oct-05-2022 12:43:13: 	undefined
+info: Oct-05-2022 17:14:44: 	File uploaded!
+info: Oct-05-2022 17:15:19: 	File uploaded!
+info: Oct-05-2022 17:15:58: 	File uploaded!
+info: Oct-05-2022 17:16:32: 	File uploaded!
+info: Oct-05-2022 17:16:47: 	File uploaded!
+info: Oct-05-2022 17:17:08: 	File uploaded!
+info: Oct-05-2022 17:17:23: 	File uploaded!
+info: Oct-05-2022 17:17:42: 	File uploaded!
+info: Oct-05-2022 17:18:51: 	File uploaded!
+info: Oct-05-2022 17:19:30: 	File uploaded!
+info: Oct-05-2022 17:20:18: 	File uploaded!
+info: Oct-05-2022 17:20:48: 	File uploaded!
+info: Oct-05-2022 17:21:14: 	File uploaded!
+info: Oct-05-2022 17:23:00: 	File uploaded!
+info: Oct-05-2022 17:23:27: 	File uploaded!
+info: Oct-05-2022 17:24:31: 	File uploaded!
+info: Oct-05-2022 17:24:48: 	File uploaded!
+info: Oct-05-2022 17:25:52: 	File uploaded!
+info: Oct-05-2022 17:35:21: 	File uploaded!
+info: Oct-05-2022 17:36:05: 	File uploaded!
+info: Oct-05-2022 17:43:29: 	File uploaded!
+info: Oct-05-2022 17:43:56: 	File uploaded!
+info: Oct-05-2022 22:37:18: 	User not found
+info: Oct-05-2022 22:38:23: 	User created successfully
+info: Oct-05-2022 22:39:10: 	File uploaded!
+info: Oct-05-2022 22:39:28: 	File uploaded!
+info: Oct-05-2022 22:39:32: 	File uploaded!
+info: Oct-05-2022 23:50:02: 	File uploaded!
+info: Oct-05-2022 23:50:40: 	File uploaded!
+info: Oct-06-2022 01:21:15: 	File uploaded!
+error: Oct-06-2022 02:11:24: 	undefined
+error: Oct-06-2022 02:14:49: 	undefined
+error: Oct-06-2022 02:38:23: 	undefined
+error: Oct-06-2022 02:39:57: 	undefined
+error: Oct-06-2022 02:40:58: 	undefined
+error: Oct-06-2022 02:41:53: 	jwt expired
+error: Oct-06-2022 02:42:14: 	jwt expired
+error: Oct-06-2022 02:42:41: 	undefined
+info: Oct-06-2022 23:10:30: 	File uploaded!
+info: Oct-06-2022 23:14:41: 	File uploaded!
+info: Oct-06-2022 23:26:04: 	File uploaded!
+info: Oct-06-2022 23:43:47: 	File uploaded!
+info: Oct-06-2022 23:44:33: 	File uploaded!
+info: Oct-07-2022 00:05:20: 	File uploaded!
+info: Oct-07-2022 00:06:49: 	File uploaded!
+info: Oct-07-2022 00:10:27: 	File uploaded!
+info: Oct-07-2022 00:11:33: 	File uploaded!
+info: Oct-07-2022 00:13:38: 	File uploaded!
+error: Oct-07-2022 02:04:00: 	jwt expired
+info: Oct-07-2022 02:04:37: 	File uploaded!
+info: Oct-07-2022 02:04:49: 	File uploaded!
+info: Oct-07-2022 02:05:03: 	File uploaded!
+info: Oct-07-2022 02:05:13: 	File uploaded!
+info: Oct-07-2022 02:05:19: 	File uploaded!
+info: Oct-07-2022 17:43:24: 	File uploaded!
+error: Oct-07-2022 17:57:30: 	Request aborted
+error: Oct-07-2022 18:18:15: 	
+Invalid `prisma.file.delete()` invocation in
+C:\Users\ABDUL\Desktop\ximxim\src\services\file.service.ts:52:37
+
+  49 
+  50 public async delete(id: number) {
+  51     try {
+→ 52         await prisma.file.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.
+info: Oct-07-2022 18:23:47: 	File updated!
+info: Oct-07-2022 18:31:01: 	File uploaded!

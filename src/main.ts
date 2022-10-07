@@ -1,17 +1,28 @@
 import dotenv from 'dotenv';
-import express, { Express } from 'express';
-import router from './router/index'
+import express from 'express';
+import 'module-alias/register';
+import cors from 'cors';
+
+import router from './router/index';
+
 dotenv.config()
 
-const app: Express = express();
+const app = express();
 const PORT = process.env.PORT;
+
+app.use(cors());
+
+app.use(express.json());
 
 app.use('/api', router);
 
-try {
-    app.listen(PORT, () => {
-        console.log(`Server has been started on http://localhost:${PORT}!`)
-    })
-} catch (error) {
-    throw Error('Server is not started:( - \n' + error)
-}
+
+(async () => {
+    try {
+        app.listen(PORT, () => {
+            console.log(`Server has been started on http://localhost:${PORT}!`)
+        })
+    } catch (error) {
+        throw Error('Server is not started:( - \n' + error)
+    }
+})()
